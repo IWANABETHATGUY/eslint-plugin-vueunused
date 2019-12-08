@@ -11,7 +11,8 @@
   "main": "lib/index.js",
   "scripts": {},
   "dependencies": {
-    "requireindex": "~1.1.0"
+    "requireindex": "~1.1.0",
+    "vscf-deadcode-detect": "^0.3.2"
   },
   "devDependencies": {
     "eslint": "^6.7.2"
