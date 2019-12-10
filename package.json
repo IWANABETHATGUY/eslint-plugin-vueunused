@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-vueunused",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "a eslint plugin for detecting unused code in vue single file component",
   "keywords": [
     "eslint",
@@ -12,7 +12,7 @@
   "scripts": {},
   "dependencies": {
     "requireindex": "~1.1.0",
-    "vscf-deadcode-detect": "^0.3.2"
+    "vscf-deadcode-detect": "0.4.1"
   },
   "devDependencies": {
     "eslint": "^6.7.2"

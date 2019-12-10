@@ -897,10 +897,10 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.npmjs.org/v8-compile-cache/-/v8-compile-cache-2.1.0.tgz#e14de37b31a6d194f5690d67efc4e7f6fc6ab30e"
   integrity sha512-usZBT3PW+LOjM25wbqIlZwPeJV+3OSz3M1k1Ws8snlW39dZyYL9lOGC5FgPVHfk0jKmjiDV8Z0mIbVQPiwFs7g==
 
-vscf-deadcode-detect@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.npmjs.org/vscf-deadcode-detect/-/vscf-deadcode-detect-0.3.2.tgz#3d4d40b7f7485b194d4b5b6f0b351458b5221992"
-  integrity sha512-yv5+bKgV162R8mrYrvXPrKUY/SplPZsBx5jD/sw1Yi+ndoHInSGlrS3lkREaRx11d2YuCfKn0B+QhXSMf6UpDw==
+vscf-deadcode-detect@0.4.1:
+  version "0.4.1"
+  resolved "https://registry.npmjs.org/vscf-deadcode-detect/-/vscf-deadcode-detect-0.4.1.tgz#6902861bfdc80c3b82ca2ced42b9a03584e82dd6"
+  integrity sha512-NivUamqA9GEyHzhke8wrsR2sIW+zMKyphtfc2JIunQSxvbmBzxns3aw5qd8iuFUlOYR7NqyBfm7D6131UyEJQw==
   dependencies:
     "@babel/traverse" "^7.7.2"
     "@babel/types" "^7.7.4"
