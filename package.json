@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-vueunused",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "a eslint plugin for detecting unused code in vue single file component",
   "keywords": [
     "eslint",
