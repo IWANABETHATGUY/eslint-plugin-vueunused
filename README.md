@@ -36,7 +36,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "vueunused/rule-name": 2
+        "vueunused/unused": 2
     }
 }
 ```
