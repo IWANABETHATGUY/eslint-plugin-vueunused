@@ -1,3 +1,4 @@
+[ENGLISH](https://github.com/IWANABETHATGUY/eslint-plugin-vueunused) | 中文
 # eslint-plugin-vueunused
 
 一个用于检测vue单个文件组件中死代码的eslint插件。
