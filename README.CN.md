@@ -48,8 +48,8 @@ $ npm install eslint-plugin-vueunused --save-dev
 
 
 
-## Warning
-This plugin is not compatible with `eslint-plugin-html`,cause that plugin could destroy your `scf(.vue)` component template information, so I recommend you use `eslint-plugin-vue`, this plugin is also used to make up for the feature that did not complete, like [no-unused-methods](https://github.com/vuejs/eslint-plugin-vue/issues/848),[no-unused-variables](https://github.com/vuejs/eslint-plugin-vue/issues/631) and so on, actually most of property you defined in the component scope which is not used it can detect it.
+## 警告
 
-## Tips
-If you use VSCode Editor, I recommend you install `ESlint` VSCode plugin which will point out your deadcode with wavy line which is nicely prompted;
+该插件与`eslint-plugin-html`不兼容，因为该插件可能会破坏您的`scf（.vue）`组件模板信息，因此我建议您使用`eslint-plugin-vue`，本插件用于弥补`eslint-plugin-vue`某些未完成的功能，例如[no-unused-methods](https://github.com/vuejs/eslint-plugin-vue/issues/848),[no-unused-variables](https://github.com/vuejs/eslint-plugin-vue/issues/631)，等等挂载在`this`上的属性实际上，您在组件范围内定义的大多数未使用的属性都可以被检测到。
+## 建议
+如果您使用VSCode编辑器，我强烈建议您安装`ESlint` VSCode插件，它可以用更加直观的方式指出单文件中的死代码。

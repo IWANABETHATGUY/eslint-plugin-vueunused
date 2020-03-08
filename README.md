@@ -52,4 +52,4 @@ Then configure the rules you want to use under the rules section.
 This plugin is not compatible with `eslint-plugin-html`,cause that plugin could destroy your `scf(.vue)` component template information, so I recommend you use `eslint-plugin-vue`, this plugin is also used to make up for the feature that did not complete, like [no-unused-methods](https://github.com/vuejs/eslint-plugin-vue/issues/848),[no-unused-variables](https://github.com/vuejs/eslint-plugin-vue/issues/631) and so on, actually most of property you defined in the component scope which is not used it can detect it.
 
 ## Tips
-If you use VSCode Editor, I recommend you install `ESlint` VSCode plugin which will point out your deadcode with wavy line which is nicely prompted;
+If you use the VSCode editor, I strongly recommend that you install the `ESlint` VSCode plugin, which can point out dead code in a single file in a more intuitive way.
