@@ -12,7 +12,7 @@
   "scripts": {},
   "dependencies": {
     "requireindex": "~1.1.0",
-    "vscf-deadcode-detect": "^0.4.1"
+    "vscf-deadcode-detect": "^0.5.0"
   },
   "devDependencies": {
     "eslint": "^6.7.2"
