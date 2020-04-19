@@ -1,4 +1,4 @@
-ENGLISH | [中文](https://github.com/IWANABETHATGUY/eslint-plugin-vueunused)
+ENGLISH | [中文](https://github.com/IWANABETHATGUY/eslint-plugin-vueunused/blob/master/README.CN.md)
 
 # eslint-plugin-vueunused
 
