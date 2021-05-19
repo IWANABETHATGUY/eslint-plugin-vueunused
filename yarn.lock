@@ -1438,6 +1438,11 @@ vscf-deadcode-detect@^0.5.5:
     "@babel/types" "^7.7.4"
     vue-template-compiler "^2.6.10"
 
+vue-eslint-editor@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.nlark.com/vue-eslint-editor/download/vue-eslint-editor-1.1.0.tgz#653d13705058f68813b1a9814a39e48f44ab9ed3"
+  integrity sha1-ZT0TcFBY9ogTsamBSjnkj0SrntM=
+
 vue-eslint-parser@^7.2.0:
   version "7.2.0"
   resolved "https://registry.npm.taobao.org/vue-eslint-parser/download/vue-eslint-parser-7.2.0.tgz?cache=0&sync_timestamp=1606963566526&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-eslint-parser%2Fdownload%2Fvue-eslint-parser-7.2.0.tgz#1e17ae94ca71e617025e05143c8ac5593aacb6ef"
