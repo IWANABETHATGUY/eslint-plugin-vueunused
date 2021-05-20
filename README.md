@@ -22,13 +22,14 @@ $ npm install eslint-plugin-vueunused --save-dev
 **Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-vueunused` globally.
 ## Usage
 
-Add `vueunused` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
-
+Add `vueunused` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix.
+Also, you need to install `vue-eslint-parser`. Because this plugin requires vue-eslint-parser to parse .vue files
 ```json
 {
     "plugins": [
         "vueunused"
-    ]
+    ],
+    "parser": "vue-eslint-parser",
 }
 ```
 
