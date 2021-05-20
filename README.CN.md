@@ -22,12 +22,14 @@ $ npm install eslint-plugin-vueunused --save-dev
 如果您全局安装了ESLint（使用`-g`标志），则还必须全局安装`eslint-plugin-vueunused`。
 ## 使用方法
 
-将 `vueunused` 添加至你的 `.eslintrc` 配置文件中的`plugins`部分. 你可以省略 `eslint-plugin-` 前缀:
+将 `vueunused` 添加至你的 `.eslintrc` 配置文件中的`plugins`部分. 你可以省略 `eslint-plugin-` 前缀.
+除此之外，你需要安装 vue-eslint-parser, 因为该插件需要 vue-eslint-parser 来解析 你的 .vue 文件
 
 ```json
 {
     "plugins": [
-        "vueunused"
+        "vueunused",
+        "parser": "vue-eslint-parser",
     ]
 }
 ```
