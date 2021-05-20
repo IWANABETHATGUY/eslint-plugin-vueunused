@@ -3,7 +3,8 @@ ENGLISH | [中文](https://github.com/IWANABETHATGUY/eslint-plugin-vueunused/blo
 # eslint-plugin-vueunused
 
 a eslint plugin for detecting unused code in vue single file component
-
+## Preview
+[online-preview](https://iwanabethatguy.github.io/eslint-plugin-vueunused/)
 ## Installation
 
 You'll first need to install [ESLint](http://eslint.org):
