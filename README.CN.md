@@ -2,7 +2,8 @@
 # eslint-plugin-vueunused
 
 一个用于检测vue单个文件组件中死代码的eslint插件。
-
+## 在线预览
+[在线预览](https://iwanabethatguy.github.io/eslint-plugin-vueunused/)
 ## 安装
 
 首先你需要安装 [ESLint](http://eslint.org):
