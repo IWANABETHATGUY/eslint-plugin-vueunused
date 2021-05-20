@@ -121,7 +121,7 @@ export default {
       return {
         ...this.commonConfig,
         rules: {
-            "vueunused/unused": 1
+          "vueunused/unused": 1,
         },
       };
     },
@@ -154,7 +154,7 @@ export default {
       linter.defineRule(`vue/${ruleId}`, rules[ruleId]);
     }
     linter.defineRule("no-undef", coreRules["no-undef"]);
-    linter.defineRule("vueunused/unused", unusedRules)
+    linter.defineRule("vueunused/unused", unusedRules);
     linter.defineParser("vue-eslint-parser", { parseForESLint });
   },
 };
