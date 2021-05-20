@@ -1,6 +1,3 @@
-/**
- * @author Toru Nagashima
- */
 "use strict";
 
 const RuleTester = require("eslint").RuleTester;

@@ -21,8 +21,7 @@
   "devDependencies": {
     "eslint": "^6.7.2",
     "mocha": "^7.1.2",
-    "strip-indent": "^3.0.0",
-    "vue-eslint-parser": "^7.2.0"
+    "strip-indent": "^3.0.0"
   },
   "engines": {
     "node": ">=8.0.0"
