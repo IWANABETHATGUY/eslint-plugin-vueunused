@@ -20,7 +20,8 @@
     "espree": "^7.3.1",
     "vue-eslint-editor": "^1.1.0",
     "vue-eslint-parser": "^7.6.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "eslint-plugin-vueunused": "^0.5.2"
   },
   "browserslist": [
     "> 1%",

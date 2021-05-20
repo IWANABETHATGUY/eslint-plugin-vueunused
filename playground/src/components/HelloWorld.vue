@@ -1,25 +1,43 @@
 <template>
   <div class="eslint-code-container">
-    <eslint-editor
-      :linter="linter"
-      :config="config"
-      :code="code"
-      :style="{ height }"
-      class="eslint-code-block"
-      :filename="filename"
-      :language="language"
-      :preprocess="preprocess"
-      :postprocess="postprocess"
-      dark
-      :format="format"
-    >
-    </eslint-editor>
+    <div style="width: 50%">
+      <eslint-editor
+        :linter="linter"
+        :config="vueConfig"
+        :code="code"
+        :style="{ height }"
+        class="eslint-code-block"
+        :filename="filename"
+        :language="language"
+        :preprocess="preprocess"
+        :postprocess="postprocess"
+        dark
+        :format="format"
+      >
+      </eslint-editor>
+    </div>
+    <div style="width:50%">
+      <eslint-editor
+        :linter="linter"
+        :config="vueunusedConfig"
+        :code="code"
+        :style="{ height }"
+        class="eslint-code-block"
+        :filename="filename"
+        :language="language"
+        :preprocess="preprocess"
+        :postprocess="postprocess"
+        dark
+        :format="format"
+      />
+    </div>
   </div>
 </template>
 
 <script>
 import EslintEditor from "vue-eslint-editor";
 import { rules, processors } from "eslint-plugin-vue";
+import unusedRules from "eslint-plugin-vueunused/lib/rules/unused";
 import { code } from "../utils/code";
 export default {
   name: "ESLintCodeBlock",
@@ -50,12 +68,7 @@ export default {
         tabSize: 2,
       },
       code,
-    };
-  },
-
-  computed: {
-    config() {
-      return {
+      commonConfig: {
         globals: {
           console: false,
           // ES2015 globals
@@ -82,9 +95,7 @@ export default {
           Atomics: false,
           SharedArrayBuffer: false,
         },
-        rules: {
-          "vue/no-unused-properties": ["error", { groups: ["props", "data", "computed", "methods"] }],
-        },
+
         parser: "vue-eslint-parser",
         parserOptions: {
           ecmaVersion: 2020,
@@ -93,9 +104,27 @@ export default {
             jsx: true,
           },
         },
+      },
+    };
+  },
+
+  computed: {
+    vueConfig() {
+      return {
+        ...this.commonConfig,
+        rules: {
+          "vue/no-unused-properties": ["error", { groups: ["props", "data", "computed", "methods"] }],
+        },
       };
     },
-
+    vueunusedConfig() {
+      return {
+        ...this.commonConfig,
+        rules: {
+            "vueunused/unused": 1
+        },
+      };
+    },
     height() {
       const lines = this.code.split("\n").length;
       return `${Math.max(120, 19 * lines)}px`;
@@ -125,7 +154,7 @@ export default {
       linter.defineRule(`vue/${ruleId}`, rules[ruleId]);
     }
     linter.defineRule("no-undef", coreRules["no-undef"]);
-
+    linter.defineRule("vueunused/unused", unusedRules)
     linter.defineParser("vue-eslint-parser", { parseForESLint });
   },
 };
@@ -133,6 +162,7 @@ export default {
 
 <style>
 .eslint-code-container {
+  display: flex;
   border-radius: 6px;
   padding: 1.25rem 0;
   margin: 1em 0;
@@ -140,7 +170,7 @@ export default {
 }
 
 .eslint-code-block {
-  width: 50%;
+  width: 100%;
 }
 
 .eslint-editor-actions {

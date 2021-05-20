@@ -888,7 +888,7 @@
     "@babel/parser" "^7.12.13"
     "@babel/types" "^7.12.13"
 
-"@babel/traverse@^7.0.0", "@babel/traverse@^7.13.0", "@babel/traverse@^7.13.15", "@babel/traverse@^7.14.0", "@babel/traverse@^7.14.2":
+"@babel/traverse@^7.0.0", "@babel/traverse@^7.13.0", "@babel/traverse@^7.13.15", "@babel/traverse@^7.14.0", "@babel/traverse@^7.14.2", "@babel/traverse@^7.7.2":
   version "7.14.2"
   resolved "https://registry.nlark.com/@babel/traverse/download/@babel/traverse-7.14.2.tgz?cache=0&sync_timestamp=1620839391311&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Ftraverse%2Fdownload%2F%40babel%2Ftraverse-7.14.2.tgz#9201a8d912723a831c2679c7ebbf2fe1416d765b"
   integrity sha1-kgGo2RJyOoMcJnnH678v4UFtdls=
@@ -902,7 +902,7 @@
     debug "^4.1.0"
     globals "^11.1.0"
 
-"@babel/types@^7.0.0", "@babel/types@^7.12.1", "@babel/types@^7.12.13", "@babel/types@^7.13.0", "@babel/types@^7.13.12", "@babel/types@^7.13.16", "@babel/types@^7.14.0", "@babel/types@^7.14.2", "@babel/types@^7.4.4":
+"@babel/types@^7.0.0", "@babel/types@^7.12.1", "@babel/types@^7.12.13", "@babel/types@^7.13.0", "@babel/types@^7.13.12", "@babel/types@^7.13.16", "@babel/types@^7.14.0", "@babel/types@^7.14.2", "@babel/types@^7.4.4", "@babel/types@^7.7.4":
   version "7.14.2"
   resolved "https://registry.nlark.com/@babel/types/download/@babel/types-7.14.2.tgz#4208ae003107ef8a057ea8333e56eb64d2f6a2c3"
   integrity sha1-QgiuADEH74oFfqgzPlbrZNL2osM=
@@ -3374,6 +3374,14 @@ eslint-plugin-vue@^7.9.0:
     natural-compare "^1.4.0"
     semver "^7.3.2"
     vue-eslint-parser "^7.6.0"
+
+eslint-plugin-vueunused@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.nlark.com/eslint-plugin-vueunused/download/eslint-plugin-vueunused-0.5.2.tgz#8d9c71826e1034f2919281835985d0ed876d5f99"
+  integrity sha1-jZxxgm4QNPKRkoGDWYXQ7YdtX5k=
+  dependencies:
+    requireindex "~1.1.0"
+    vscf-deadcode-detect "^0.5.0"
 
 eslint-scope@^4.0.3:
   version "4.0.3"
@@ -6754,6 +6762,11 @@ require-main-filename@^2.0.0:
   resolved "https://registry.npm.taobao.org/require-main-filename/download/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
   integrity sha1-0LMp7MfMD2Fkn2IhW+aa9UqomJs=
 
+requireindex@~1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npm.taobao.org/requireindex/download/requireindex-1.1.0.tgz#e5404b81557ef75db6e49c5a72004893fe03e162"
+  integrity sha1-5UBLgVV+91225JxacgBIk/4D4WI=
+
 requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/requires-port/download/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
@@ -7932,6 +7945,15 @@ vm-browserify@^1.0.1:
   resolved "https://registry.nlark.com/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
+vscf-deadcode-detect@^0.5.0:
+  version "0.5.5"
+  resolved "https://registry.nlark.com/vscf-deadcode-detect/download/vscf-deadcode-detect-0.5.5.tgz#2723b1c63f5bdc46d8d04b1382b5b5da47cbdc34"
+  integrity sha1-JyOxxj9b3EbY0EsTgrW12kfL3DQ=
+  dependencies:
+    "@babel/traverse" "^7.7.2"
+    "@babel/types" "^7.7.4"
+    vue-template-compiler "^2.6.10"
+
 vue-eslint-editor@^1.1.0:
   version "1.1.0"
   resolved "https://registry.nlark.com/vue-eslint-editor/download/vue-eslint-editor-1.1.0.tgz#653d13705058f68813b1a9814a39e48f44ab9ed3"
@@ -7982,7 +8004,7 @@ vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-compiler@^2.6.11:
+vue-template-compiler@^2.6.10, vue-template-compiler@^2.6.11:
   version "2.6.12"
   resolved "https://registry.nlark.com/vue-template-compiler/download/vue-template-compiler-2.6.12.tgz#947ed7196744c8a5285ebe1233fe960437fcc57e"
   integrity sha1-lH7XGWdEyKUoXr4SM/6WBDf8xX4=
