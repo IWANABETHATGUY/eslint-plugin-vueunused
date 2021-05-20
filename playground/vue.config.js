@@ -1,7 +1,10 @@
-const path = require('path')
+const path = require("path");
+const webpack = require("webpack");
 module.exports = {
+  publicPath: './',
   configureWebpack(_config, _isServer) {
-    return {
+    /**@type import('webpack').Configuration */
+    const config = {
       resolve: {
         alias: {
           module: require.resolve("./shim/module"),
@@ -9,5 +12,6 @@ module.exports = {
         },
       },
     };
+    return config
   },
 };
