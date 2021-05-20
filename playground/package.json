@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prebuild": "rimraf ../docs",
+    "postbuild": "mv ./dist ../docs"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -16,12 +18,13 @@
     "@vue/cli-service": "~4.5.0",
     "eslint": "^7.26.0",
     "eslint-plugin-vue": "^7.9.0",
+    "eslint-plugin-vueunused": "^0.5.2",
     "eslint4b": "^7.26.0",
     "espree": "^7.3.1",
+    "rimraf": "^3.0.2",
     "vue-eslint-editor": "^1.1.0",
     "vue-eslint-parser": "^7.6.0",
-    "vue-template-compiler": "^2.6.11",
-    "eslint-plugin-vueunused": "^0.5.2"
+    "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
     "> 1%",
