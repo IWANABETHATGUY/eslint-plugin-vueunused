@@ -11,12 +11,13 @@ export default {
     };
   },
   created() {
-    this.test();
+    // this.test();
     const { nw } = this;
   },
   methods: {
     test() {
       const { sn } = this;
+      // you could also uncomment this.test() in created hook, and comment line blow
       this.test2();
     },
     test2() {

@@ -1,7 +1,8 @@
 const path = require("path");
 const webpack = require("webpack");
 module.exports = {
-  publicPath: './',
+  publicPath: "./",
+  outputDir: path.resolve(__dirname, "../docs"),
   configureWebpack(_config, _isServer) {
     /**@type import('webpack').Configuration */
     const config = {
@@ -12,6 +13,6 @@ module.exports = {
         },
       },
     };
-    return config
+    return config;
   },
 };
