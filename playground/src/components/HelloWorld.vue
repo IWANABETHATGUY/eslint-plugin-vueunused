@@ -1,35 +1,39 @@
 <template>
   <div class="eslint-code-container">
-    <div style="width: 50%">
-      <eslint-editor
-        :linter="linter"
-        :config="vueConfig"
-        :code="code"
-        :style="{ height }"
-        class="eslint-code-block"
-        :filename="filename"
-        :language="language"
-        :preprocess="preprocess"
-        :postprocess="postprocess"
-        dark
-        :format="format"
-      >
-      </eslint-editor>
-    </div>
-    <div style="width:50%">
-      <eslint-editor
-        :linter="linter"
-        :config="vueunusedConfig"
-        :code="code"
-        :style="{ height }"
-        class="eslint-code-block"
-        :filename="filename"
-        :language="language"
-        :preprocess="preprocess"
-        :postprocess="postprocess"
-        dark
-        :format="format"
-      />
+    <div class="code-block">
+      <div style="width: 50%">
+        <h3>eslint-plugin-vue</h3>
+        <eslint-editor
+          :linter="linter"
+          :config="vueConfig"
+          :code="code"
+          :style="{ height }"
+          class="eslint-code-block"
+          :filename="filename"
+          :language="language"
+          :preprocess="preprocess"
+          :postprocess="postprocess"
+          dark
+          :format="format"
+        >
+        </eslint-editor>
+      </div>
+      <div style="width:50%">
+        <h3>eslint-plugin-vueunused</h3>
+        <eslint-editor
+          :linter="linter"
+          :config="vueunusedConfig"
+          :code="code"
+          :style="{ height }"
+          class="eslint-code-block"
+          :filename="filename"
+          :language="language"
+          :preprocess="preprocess"
+          :postprocess="postprocess"
+          dark
+          :format="format"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -162,13 +166,12 @@ export default {
 
 <style>
 .eslint-code-container {
-  display: flex;
   border-radius: 6px;
-  padding: 1.25rem 0;
   margin: 1em 0;
-  background-color: #1e1e1e;
 }
-
+.code-block {
+  display: flex;
+}
 .eslint-code-block {
   width: 100%;
 }
