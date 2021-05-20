@@ -1,4 +1,4 @@
-[ENGLISH](https://github.com/IWANABETHATGUY/eslint-plugin-vueunused/blob//README.CN.md) | 中文 
+[ENGLISH](https://github.com/IWANABETHATGUY/eslint-plugin-vueunused/blob/master/README.md) | 中文 
 # eslint-plugin-vueunused
 
 一个用于检测vue单个文件组件中死代码的eslint插件。
